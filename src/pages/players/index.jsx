@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AddPlayer from "./addPlayer";
+import { useNavigate } from "react-router-dom";
 import Modal from "../../components/modal";
 
 const Players = () => {
@@ -17,6 +18,8 @@ const Players = () => {
     setPlayers(newPlayers);
   };
 
+  const navigate = useNavigate()
+
   return (
     <div>
       <h1>Participants ({players.length})</h1>
@@ -28,7 +31,7 @@ const Players = () => {
       ))}
 
       <button onClick={() => setIsAddingPlayer(true)}>Ajouter un joueur</button>
-      <button disabled={players.length < 3}>Commencer la partie</button>
+      <button disabled={players.length < 3} onClick={() => navigate("/games-selection")}>Commencer la partie</button>
       {isAddingPlayer && (
         <Modal>
           <AddPlayer

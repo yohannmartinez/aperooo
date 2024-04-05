@@ -1,30 +1,30 @@
 export const games = [
     {
         name: "pigeon",
-        game:<></>
+        game:<>1</>
     },
     {
         name: "pigeon",
-        game:<></>
+        game:<>2</>
     },
     {
         name: "pigeon",
-        game:<></>
+        game:<>3</>
     },
     {
         name: "pigeon",
-        game:<></>
+        game:<>4</>
     },
     {
         name: "pigeon",
-        game:<></>
+        game:<>5</>
     },
     {
         name: "pigeon",
-        game:<></>
+        game:<>6</>
     },
     {
         name: "pigeon",
-        game:<></>
+        game:<>7</>
     }
 ]
